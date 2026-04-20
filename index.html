@@ -189,3 +189,61 @@ footer {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Background</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+    }
+
+    /* Animated background */
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #d4af37, #000000);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Content style */
+    .content {
+      color: white;
+      text-align: center;
+      margin-top: 20%;
+      font-size: 30px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="content">
+    Trade With Sohaib 🚀
+  </div>
+
+</body>
+  </html>
